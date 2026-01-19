@@ -27,9 +27,9 @@
 ### 1.1 Đánh giá quá trình
 
 #### a) Về chuyên cần
-- Trong 16 tuần học, em vắng 1 buổi học 
-- 15 tuần còn lại em đi học đầy đủ và tích cực trong giờ học, hoàn thành các nhiệm vụ mà thầy và anh giao trên lớp
-- Bài tập về nhà em nộp đầy đủ, đúng hạn được giao
+- Trong 16 tuần học, em vắng 1 buổi học do bị sốt cao 39.5 độ
+- 15 tuần còn lại em đi học đầy đủ và tích cực trong giờ học, luôn hoàn thành các nhiệm vụ mà thầy và anh giao trên lớp
+- Bài tập về nhà em đã làm và nộp đầy đủ,luôn đúng hạn được giao
 #### b) Về làm việc với nhóm
 - Nhóm em đã cùng nhau làm và trình bày trước lớp 3 lần, trong đó
 + 1 lần xung phong trình bày vễ mã AES trước lớp
@@ -38,7 +38,7 @@
 - Trong các buổi nhóm trình bày, em đều có mặt đầy đủ và trình bày cùng các bạn
 #### c) Về nhiệm vụ bài tập lớn
 - Nhóm em gồm 3 bạn đã phát triển được ứng dụng ChatNet giúp tăng cường bảo mật tin nhắn bằng 4 loại mã hóa AES, DES, RSA, Caesar, hỗ trợ gửi tin nhắn văn bản, hình ảnh và tập file, đồng thời nhóm cũng đã tìm hiểu và phát triển tính năng mã hóa và gửi video, tuy nhiên do dung lượng video lớn cùng với thời gian có hạn, nên nhóm chưa hoàn thiện được tính năng này. Trong thời gian tới, nhóm sẽ tiếp tục tìm tòi và phát triển thêm.
-- Trong bài tập lớn, em làm được 40% trên tổng khối lượng công việc. ​
+- Trong bài tập lớn, em làm được 40% trên tổng khối lượng công việc.​
 
 ### 1.2 Các kiến thức tích lũy được
 
@@ -169,8 +169,6 @@ GCD(48, 18):
         return a
 ```
 
----
-
 #### **B. Extended GCD (Euclid Mở Rộng)**
 
 **Mục đích:** Không chỉ tìm gcd(a,b), mà còn tìm x, y sao cho:
@@ -254,9 +252,7 @@ Bước 1 quay lại: g=6, x1=1, y1=-1
 ```
 
 **Kết quả thực nghiệm:**
-![Kết quả 1](/home/lenovo/cryptography_project/results/test1_gcd_extendedGCD.png)
-
----
+![Kết quả 1](results/test1_gcd_extendedGCD.png)
 
 #### **C. Số Nguyên Tố và Kiểm Tra Nguyên Tố**
 
@@ -334,8 +330,7 @@ is_prime(n):
         return True
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 2](/home/lenovo/cryptography_project/results/test2_snt.png)
----
+![Kết quả 2](results/test2_snt.png)
 
 #### **D. Phân Tích Thừa Số Nguyên Tố (Factorization)**
 
@@ -400,8 +395,7 @@ Factorization(60):
         return factors
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 3](/home/lenovo/cryptography_project/results/test3_ptsnt.png)
----
+![Kết quả 3](results/test3_ptsnt.png)
 
 ### 2.2 Số Học Module 
 
@@ -478,9 +472,8 @@ Factorization(60):
         return result
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 4](/home/lenovo/cryptography_project/results/test4.png)
+![Kết quả 4](/results/test4.png)
 
----
 
 #### **B. Modular Inverse (Phần Tử Nghịch Đảo)**
 
@@ -547,8 +540,7 @@ Kiểm tra: 7 × 15 = 105 = 26 × 4 + 1 ✓
         return (x % m + m) % m
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 5](/home/lenovo/cryptography_project/results/test5.png)
----
+![Kết quả 5](results/test5.png)
 
 #### **C. Định Lý Phần Dư Trung Hoa (Chinese Remainder Theorem - CRT)**
 
@@ -675,7 +667,7 @@ def solve_linear_congruence(a, b, m):
     return solutions
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 6](/home/lenovo/cryptography_project/results/test6.png)
+![Kết quả 6](results/test6.png)
 
 #### **B. Ứng Dụng: Affine Cipher**
 
@@ -917,7 +909,7 @@ def matrix_inverse_2x2(A, mod):
     ]
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 7-8](/home/lenovo/cryptography_project/results/test7_8.png)
+![Kết quả 7-8](results/test7_8.png)
 
 #### **D. Ứng Dụng: Hill Cipher**
 
@@ -1141,7 +1133,7 @@ Result: k = 3, Plaintext = HELLO WORLD ✓
 ```
 
 **Kết quả thực nghiệm:**
-![Kết quả 9](/home/lenovo/cryptography_project/results/test3.1.png)
+![Kết quả 9](results/test3.1.png)
 
 ### 3.2 Mã Thay Thế (Substitution Cipher)
 
@@ -1201,7 +1193,7 @@ def substitution_decrypt(ciphertext, key):
 **Độ phức tạp tấn công:** O(26! × n) ≈ không khả thi bằng brute force ✗
 
 **Kết quả thực nghiệm:**
-![Kết quả 10](/home/lenovo/cryptography_project/results/test3.2.png)
+![Kết quả 10](results/test3.2.png)
 
 ### 3.3 Vigenère Cipher - Polyalphabetic Cipher
 
@@ -1378,7 +1370,7 @@ def index_of_coincidence(text):
 **Độ phức tạp tấn công:** O(n²) nếu biết độ dài khóa
 
 **Kết quả thực nghiệm:**
-![Kết quả 11](/home/lenovo/cryptography_project/results/test3.3.png)
+![Kết quả 11](results/test3.3.png)
 
 ### 3.4 Hill Cipher - Matrix Cipher
 
@@ -1461,7 +1453,7 @@ def hill_cipher_decrypt_2x2(ciphertext, key_matrix_inv):
 **Độ phức tạp:** O(n × k³) với k là kích thước ma trận
 
 **Kết quả thực nghiệm:**
-![Kết quả 12](/home/lenovo/cryptography_project/results/test3.4.png)
+![Kết quả 12](results/test3.4.png)
 
 ### 3.5 Playfair Cipher
 
@@ -1562,7 +1554,7 @@ def playfair_encrypt(plaintext, key):
 ```
 
 **Kết quả thực nghiệm:**
-![Kết quả 13](/home/lenovo/cryptography_project/results/test3.5.png)
+![Kết quả 13](results/test3.5.png)
 
 ### 3.6 Rabin Cipher - Quadratic Residue
 
@@ -1632,7 +1624,7 @@ def rabin_decrypt(c, p, q):
     return [r1, r2, r3, r4]
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 14](/home/lenovo/cryptography_project/results/test3.6.png)
+![Kết quả 14](results/test3.6.png)
 
 ### So Sánh Các Mã Cổ Điển
 
@@ -1810,7 +1802,7 @@ Output[7] = Input[1-1] = Input[0] = 1
 Output: 01011101 (0x5D) ✓
 ```
 **Kết quả thực nghiệm:**
-![Kết quả 15](/home/lenovo/cryptography_project/results/test4.1.png)
+![Kết quả 15](results/test4.1.png)
 
 ### 4.5 S-box (Substitution Box)
 
@@ -2011,7 +2003,7 @@ R₁ = 0x00000000
 ```
 
 **Kết quả thực nghiệm:**
-![Kết quả 16](/home/lenovo/cryptography_project/results/test4.2.png)
+![Kết quả 16](results/test4.2.png)
 
 ### 4.7 Kết Hợp P-box & S-box & Feistel
 
@@ -2100,7 +2092,7 @@ class BlockCipherStructure:
 ```
 
 **Kết quả thực nghiệm:**
-![Kết quả 17](/home/lenovo/cryptography_project/results/test4.345.png)
+![Kết quả 17](results/test4.345.png)
 
 ### Tính Chất Bảo Mật
 
@@ -2317,10 +2309,10 @@ Tấn công:
 3. Match! → (K₁, K₂) tìm được
 ```
 
-### Kết Quả Kiểm Thử
+#### Kết Quả Kiểm Thử
 **Kết quả thực nghiệm:**
-![Kết quả 18](/home/lenovo/cryptography_project/results/test6-des.png)
-![Kết quả 19](/home/lenovo/cryptography_project/results/test6-des2.png)
+![Kết quả 18](results/test6-des.png)
+![Kết quả 19](results/test6-des2.png)
 
 ### 5.5 Cơ Chế Hoạt Động Chi Tiết
 
@@ -2596,10 +2588,10 @@ Sinh Word4:
   Word4 = Word0 ⊕ TempWord = 2B7E1516 ⊕ 8B84EB01 = A0FA1654
 ```
 
-### Kết Quả Kiểm Thử
+#### Kết Quả Kiểm Thử
 **Kết quả thực nghiệm:**
-![Kết quả 20](/home/lenovo/cryptography_project/results/test7-aes1.png)
-![Kết quả 21](/home/lenovo/cryptography_project/results/test7-aes2.png)
+![Kết quả 20](results/test7-aes1.png)
+![Kết quả 21](results/test7-aes2.png)
 
 ### 6.5 Tấn Công AES
 
@@ -3099,10 +3091,10 @@ Không chia sẻ modulus!
 
 ---
 
-###  Kết Quả Kiểm Thử
+####  Kết Quả Kiểm Thử
 **Kết quả thực nghiệm:**
-![Kết quả 22](/home/lenovo/cryptography_project/results/test8-rsa1.png)
-![Kết quả 23](/home/lenovo/cryptography_project/results/test8-rsa2.png)
+![Kết quả 22](results/test8-rsa1.png)
+![Kết quả 23](results/test8-rsa2.png)
 
 ### Kết Luận
 
@@ -3476,9 +3468,9 @@ Phòng Chống:
 - Với salt, attacker phải tính bảng riêng cho mỗi salt!
 ```
 
-### Kết Quả Kiểm Thử
+#### Kết Quả Kiểm Thử
 **Kết quả thực nghiệm:**
-![Kết quả 22](/home/lenovo/cryptography_project/results/test8-1.png)
+![Kết quả 22](results/test8-1.png)
 
 ### 8.6 Thống Kê Hash Security
 
@@ -3507,7 +3499,17 @@ Phòng Chống:
 **File code:** `Chuong8_HamBam/hash_signature_keymanagement.py`
 ---
 
-## BẢNG SO SÁNH TOÀN DIỆN CÁC HỆ MẬT
+## KẾT LUẬN BÁO CÁO
+
+Trong báo cáo này, em đã trình bày:
+✅ **Kiến thức lý thuyết toàn diện** từ cơ bản đến nâng cao  
+✅ **Code triển khai từng thuật toán** (không dùng thư viện)  
+✅ **Ứng dụng thực tế** (mã hóa, ký, băm, quản lý khóa)  
+✅ **Tham chiếu chi tiết** đến tài liệu gốc  
+✅ **Output kiểm chứng** cho mỗi thuật toán  
+
+Qua báo cáo, em đã tổng kết được những vấn đề sau:
+### 1. BẢNG SO SÁNH TOÀN DIỆN CÁC HỆ MẬT
 
 | Hệ Thống | Năm | Khóa | Khối | Vòng | Bảo Mật (2024) | Ghi chú |
 |----------|-----|------|------|------|----------------|---------|
@@ -3523,11 +3525,7 @@ Phòng Chống:
 | SHA-512 | 2001 | N/A | 1024 | 80 | ✓✓ Safe | Mạnh hơn SHA-256 |
 | Knapsack | 1978 | variable | variable | 1 | ✗ BROKEN | Shamir 1984 |
 
----
-
-## TỔNG KẾT BẢO MẬT
-
-### Tấn Công Phổ Biến
+### 2. Tấn Công Phổ Biến
 
 | Tấn Công | Mục Tiêu | Độ Phức Tạp | Phòng Chống |
 |----------|----------|------------|-----------|
@@ -3540,9 +3538,7 @@ Phòng Chống:
 | Birthday Attack | Hash | 2^(n/2) | Hash dài |
 | Side-Channel | Any | Thực tế | Constant-time code |
 
----
-
-### Độ Phức Tạp Tính Toán
+### 3. Độ Phức Tạp Tính Toán Của các loại mã
 
 | Thuật Toán | Độ Phức Tạp | Thời Gian (Ví Dụ) |
 |-----------|-----------|------------------|
@@ -3557,13 +3553,5 @@ Phòng Chống:
 
 ---
 
-## KẾT LUẬN BÁO CÁO
-
-Dự án này cung cấp:
-✅ **Kiến thức lý thuyết toàn diện** từ cơ bản đến nâng cao  
-✅ **Code triển khai từng thuật toán** (không dùng thư viện)  
-✅ **Ứng dụng thực tế** (mã hóa, ký, băm, quản lý khóa)  
-✅ **Tham chiếu chi tiết** đến tài liệu gốc  
-✅ **Output kiểm chứng** cho mỗi thuật toán  
 
 ---
