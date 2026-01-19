@@ -18,7 +18,7 @@
 6. [Chương 6: Mã AES](#chương-6-aes)
 7. [Chương 7: Mã RSA](#chương-8-mã-rsa)
 8. [Chương 8: Hàm Băm & Chữ Ký Số](#chương-8-hàm-băm--chữ-ký-số)
-9. [Kết luận](#kết-luận)
+9. [Kết luận báo cáo](#kết-luận-báo-cáo)
 
 ---
 
@@ -3550,8 +3550,5 @@ Qua báo cáo, em đã tổng kết được những vấn đề sau:
 | AES Encryption | O(1) [fixed rounds] | ~20 microseconds |
 | RSA Encryption (2048-bit) | O(log e) [fast exp] | ~100 microseconds |
 | SHA-256 Hashing | O(n) [linear] | ~10 microseconds (512 bytes) |
-
----
-
 
 ---
